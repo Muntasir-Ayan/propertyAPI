@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	beego.Router("/", &controllers.MainController{})
-    beego.Router("/v1/property/list", &controllers.PropertyController{}, "get:GetPropertyList")
-    beego.Router("/v1/property/details", &controllers.PropertyController{}, "get:GetPropertyDetails")
+	// beego.Router("/", &controllers.MainController{})
+    beego.Router("/v1/property/list", &controllers.PropertyController{})
+    beego.Router("/v1/property/details", &controllers.PropertyController{})
 }
