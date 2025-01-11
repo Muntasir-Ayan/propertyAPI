@@ -4,25 +4,35 @@ import (
     "database/sql"
     "fmt"
     "log"
+    "strings"
 
     "github.com/beego/beego/v2/server/web"
     _ "github.com/lib/pq"
 )
 
 type PropertyList struct {
-    Value       string  `json:"value"`
-    HotelName   string  `json:"hotel_name"`
-    HotelID     string  `json:"hotel_id"`
-    Rating      float64 `json:"rating"`
-    ReviewCount int     `json:"review_count"`
-    Type        string  `json:"type"`
+    Value     string `json:"value"`
+    DestType  string `json:"dest_type"`
+    HotelID   string `json:"hotel_id"`
+    HotelName string `json:"hotel_name"`
+    Location  string `json:"location"`
+    Type      string `json:"type"`
 }
 
 type PropertyDetail struct {
     HotelID     string   `json:"hotel_id"`
     HotelName   string   `json:"hotel_name"`
+    Location    string   `json:"location"`
+    Rating      float64  `json:"rating"`
+    ReviewCount int      `json:"review_count"`
+    Price       string   `json:"price"`
+    Bedrooms    int      `json:"bedrooms"`
+    Bathroom    int      `json:"bathroom"`
+    GuestCount  int      `json:"guest_count"`
     Description string   `json:"description"`
-    ImageURLs   []string `json:"image_url"`
+    ImageURLs   []string `json:"image_urls"`
+    Type        string   `json:"type"`
+    Amenities   []string `json:"amenities"`
 }
 
 var db *sql.DB
@@ -70,8 +80,7 @@ func init() {
 
 func GetPropertyList() ([]PropertyList, error) {
     query := `
-        SELECT l.value, h.hotel_name, h.hotel_id, h.rating, h.review_count, 
-               pd.type
+        SELECT l.value, l.dest_type, h.hotel_id, h.hotel_name, h.location, pd.type
         FROM locations l
         JOIN associate_hotel h ON l.dest_id = h.dest_id
         JOIN property_detail pd ON h.hotel_id = pd.hotel_id
@@ -87,8 +96,7 @@ func GetPropertyList() ([]PropertyList, error) {
     var properties []PropertyList
     for rows.Next() {
         var p PropertyList
-        err := rows.Scan(&p.Value, &p.HotelName, &p.HotelID, &p.Rating, 
-                        &p.ReviewCount, &p.Type)
+        err := rows.Scan(&p.Value, &p.DestType, &p.HotelID, &p.HotelName, &p.Location, &p.Type)
         if err != nil {
             log.Printf("Error scanning row: %s", err)
             return nil, err
@@ -109,7 +117,9 @@ func GetPropertyList() ([]PropertyList, error) {
 
 func GetPropertyDetails() ([]PropertyDetail, error) {
     query := `
-        SELECT h.hotel_id, h.hotel_name, pd.description, pd.image_url
+        SELECT h.hotel_id, h.hotel_name, h.location, h.rating, h.review_count, h.price, 
+               h.bedrooms, h.bathroom, h.guest_count, pd.description, pd.image_url, 
+               pd.type, pd.amenities
         FROM associate_hotel h
         JOIN property_detail pd ON h.hotel_id = pd.hotel_id
     `
@@ -123,11 +133,18 @@ func GetPropertyDetails() ([]PropertyDetail, error) {
     var details []PropertyDetail
     for rows.Next() {
         var d PropertyDetail
-        var imageURLArray []byte
-        err := rows.Scan(&d.HotelID, &d.HotelName, &d.Description, &imageURLArray)
+        var imageURLArray, amenitiesArray string
+        err := rows.Scan(&d.HotelID, &d.HotelName, &d.Location, &d.Rating, &d.ReviewCount, 
+                         &d.Price, &d.Bedrooms, &d.Bathroom, &d.GuestCount, &d.Description, 
+                         &imageURLArray, &d.Type, &amenitiesArray)
         if err != nil {
             return nil, err
         }
+
+        // Convert from PostgreSQL array format to Go slice
+        d.ImageURLs = strings.Split(imageURLArray[1:len(imageURLArray)-1], ",")
+        d.Amenities = strings.Split(amenitiesArray[1:len(amenitiesArray)-1], ",")
+
         details = append(details, d)
     }
 
