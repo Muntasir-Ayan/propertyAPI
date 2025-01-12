@@ -35,10 +35,29 @@ To install and run the Property API, follow these steps:
    git clone https://github.com/Muntasir-Ayan/propertyAPI.git
    cd propertyAPI
    ```
-2. **Run**:
+2. **Configure conf/app.conf**:
+   ```bash
+   [dev]
+   appname = propertyAPI
+   httpport = 8080
+   runmode = dev
+   autorender = false
+   copyrequestbody = true
+   
+   # PostgreSQL configuration
+   [database]
+   pg_host = localhost
+   pg_port = port_number
+   pg_user = user_name
+   pg_password = password
+   pg_db = database_name
+   ```
+3. **Run**:
      ```bash
      bee run
      ```
+
 ## Api Endpoints:
 - http://localhost:8080/v1/property/list
 - http://localhost:8080/v1/property/details
+
