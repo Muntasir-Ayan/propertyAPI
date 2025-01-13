@@ -1,11 +1,13 @@
 package main
 
 import (
-	_ "propertyAPI/routers"
-	beego "github.com/beego/beego/v2/server/web"
+    "propertyAPI/helpers"
+    _ "propertyAPI/routers"
+
+    "github.com/beego/beego/v2/server/web"
 )
 
 func main() {
-	beego.Run()
+    helpers.InitDB()
+    web.Run()
 }
-
