@@ -14,7 +14,7 @@ type PropertyListController struct {
 
 func (c *PropertyListController) Get() {
     query := `
-        SELECT l.value, l.dest_type, h.hotel_id, h.hotel_name, h.location, pd.type
+        SELECT l.dest_id, l.value, l.dest_type, h.hotel_id, h.hotel_name, h.location, pd.type
         FROM locations l
         JOIN associate_hotel h ON l.dest_id = h.dest_id
         JOIN property_detail pd ON h.hotel_id = pd.hotel_id
@@ -30,10 +30,10 @@ func (c *PropertyListController) Get() {
     }
     defer rows.Close()
 
-    var properties []models.PropertyList
+    propertiesMap := make(map[string][]models.PropertyList)
     for rows.Next() {
         var p models.PropertyList
-        err := rows.Scan(&p.Value, &p.DestType, &p.HotelID, &p.HotelName, &p.Location, &p.Type)
+        err := rows.Scan(&p.DestID, &p.Value, &p.DestType, &p.HotelID, &p.HotelName, &p.Location, &p.Type)
         if err != nil {
             log.Printf("Error scanning row: %s", err)
             c.Data["json"] = map[string]interface{}{
@@ -42,7 +42,7 @@ func (c *PropertyListController) Get() {
             c.ServeJSON()
             return
         }
-        properties = append(properties, p)
+        propertiesMap[p.DestID] = append(propertiesMap[p.DestID], p)
     }
 
     if err = rows.Err(); err != nil {
@@ -54,7 +54,7 @@ func (c *PropertyListController) Get() {
         return
     }
 
-    log.Printf("Successfully retrieved properties: %+v", properties)
-    c.Data["json"] = properties
+    log.Printf("Successfully retrieved properties: %+v", propertiesMap)
+    c.Data["json"] = propertiesMap
     c.ServeJSON()
 }

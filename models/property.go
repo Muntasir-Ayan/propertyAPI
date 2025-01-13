@@ -1,6 +1,7 @@
 package models
 
 type PropertyList struct {
+    DestID    string `json:"dest_id"`
     Value     string `json:"value"`
     DestType  string `json:"dest_type"`
     HotelID   string `json:"hotel_id"`
@@ -8,6 +9,7 @@ type PropertyList struct {
     Location  string `json:"location"`
     Type      string `json:"type"`
 }
+
 
 type PropertyDetail struct {
     HotelID     string   `json:"hotel_id"`
