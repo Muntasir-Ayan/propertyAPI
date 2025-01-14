@@ -1,5 +1,6 @@
 {
-    "1397916": [
+  "1397916": {
+    "Chelsea, New York": [
       {
         "dest_id": "1397916",
         "value": "Riu Plaza New York Times Square, New York, New York, United States",
@@ -8,7 +9,20 @@
         "hotel_name": "Moxy NYC Chelsea",
         "location": "Chelsea, New York",
         "type": "Hotels"
-      },
+      }
+    ],
+    "Hell's Kitchen, New York": [
+      {
+        "dest_id": "1397916",
+        "value": "Riu Plaza New York Times Square, New York, New York, United States",
+        "dest_type": "hotel",
+        "hotel_id": "6162805",
+        "hotel_name": "Delta Hotels by Marriott New York Times Square",
+        "location": "Hell's Kitchen, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Manhattan, New York": [
       {
         "dest_id": "1397916",
         "value": "Riu Plaza New York Times Square, New York, New York, United States",
@@ -53,18 +67,11 @@
         "hotel_name": "MOXY NYC Times Square",
         "location": "Manhattan, New York",
         "type": "Hotels"
-      },
-      {
-        "dest_id": "1397916",
-        "value": "Riu Plaza New York Times Square, New York, New York, United States",
-        "dest_type": "hotel",
-        "hotel_id": "6162805",
-        "hotel_name": "Delta Hotels by Marriott New York Times Square",
-        "location": "Hell's Kitchen, New York",
-        "type": "Hotels"
       }
-    ],
-    "20088325": [
+    ]
+  },
+  "20088325": {
+    "Chelsea, New York": [
       {
         "dest_id": "20088325",
         "value": "New York, New York, United States",
@@ -74,6 +81,66 @@
         "location": "Chelsea, New York",
         "type": "Hotels"
       },
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "599531",
+        "hotel_name": "Courtyard by Marriott New York Manhattan/Chelsea",
+        "location": "Chelsea, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Harlem, New York": [
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "9747758",
+        "hotel_name": "Renaissance New York Harlem Hotel",
+        "location": "Harlem, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Hell's Kitchen, New York": [
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "13357057",
+        "hotel_name": "414 Hotel",
+        "location": "Hell's Kitchen, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "270767",
+        "hotel_name": "InterContinental New York Times Square, an IHG Hotel",
+        "location": "Hell's Kitchen, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "4925569",
+        "hotel_name": "La Quinta by Wyndham Time Square South",
+        "location": "Hell's Kitchen, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "2377260",
+        "hotel_name": "Pod Times Square",
+        "location": "Hell's Kitchen, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Manhattan, New York": [
       {
         "dest_id": "20088325",
         "value": "New York, New York, United States",
@@ -114,45 +181,9 @@
         "dest_id": "20088325",
         "value": "New York, New York, United States",
         "dest_type": "city",
-        "hotel_id": "270216",
-        "hotel_name": "HI New York City Hostel",
-        "location": "Upper West Side, New York",
-        "type": "Hostels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "13357057",
-        "hotel_name": "414 Hotel",
-        "location": "Hell's Kitchen, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "182507",
-        "hotel_name": "La Quinta by Wyndham New York City Central Park",
-        "location": "Upper West Side, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
         "hotel_id": "8229306",
         "hotel_name": "The FIDI Hotel",
         "location": "Manhattan, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "9747758",
-        "hotel_name": "Renaissance New York Harlem Hotel",
-        "location": "Harlem, New York",
         "type": "Hotels"
       },
       {
@@ -177,33 +208,6 @@
         "dest_id": "20088325",
         "value": "New York, New York, United States",
         "dest_type": "city",
-        "hotel_id": "1106729",
-        "hotel_name": "West Side YMCA",
-        "location": "Upper West Side, New York",
-        "type": "Hostels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "21985",
-        "hotel_name": "Courtyard New York Manhattan/Upper East Side",
-        "location": "Upper East Side, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "183147",
-        "hotel_name": "Pod 51",
-        "location": "Midtown East, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
         "hotel_id": "599534",
         "hotel_name": "Fairfield Inn by Marriott New York Manhattan/Financial District",
         "location": "Manhattan, New York",
@@ -222,36 +226,20 @@
         "dest_id": "20088325",
         "value": "New York, New York, United States",
         "dest_type": "city",
-        "hotel_id": "270767",
-        "hotel_name": "InterContinental New York Times Square, an IHG Hotel",
-        "location": "Hell's Kitchen, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "187781",
-        "hotel_name": "SoHo 54",
-        "location": "SoHo, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "4925569",
-        "hotel_name": "La Quinta by Wyndham Time Square South",
-        "location": "Hell's Kitchen, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
         "hotel_id": "22296",
         "hotel_name": "W New York - Times Square",
         "location": "Manhattan, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Midtown East, New York": [
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "183147",
+        "hotel_name": "Pod 51",
+        "location": "Midtown East, New York",
         "type": "Hotels"
       },
       {
@@ -262,6 +250,57 @@
         "hotel_name": "The Lexington Hotel, Autograph Collection",
         "location": "Midtown East, New York",
         "type": "Hotels"
+      }
+    ],
+    "SoHo, New York": [
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "187781",
+        "hotel_name": "SoHo 54",
+        "location": "SoHo, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Upper East Side, New York": [
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "21985",
+        "hotel_name": "Courtyard New York Manhattan/Upper East Side",
+        "location": "Upper East Side, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Upper West Side, New York": [
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "270216",
+        "hotel_name": "HI New York City Hostel",
+        "location": "Upper West Side, New York",
+        "type": "Hostels"
+      },
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "182507",
+        "hotel_name": "La Quinta by Wyndham New York City Central Park",
+        "location": "Upper West Side, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "20088325",
+        "value": "New York, New York, United States",
+        "dest_type": "city",
+        "hotel_id": "1106729",
+        "hotel_name": "West Side YMCA",
+        "location": "Upper West Side, New York",
+        "type": "Hostels"
       },
       {
         "dest_id": "20088325",
@@ -271,27 +310,11 @@
         "hotel_name": "Arthouse Hotel",
         "location": "Upper West Side, New York",
         "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "2377260",
-        "hotel_name": "Pod Times Square",
-        "location": "Hell's Kitchen, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "20088325",
-        "value": "New York, New York, United States",
-        "dest_type": "city",
-        "hotel_id": "599531",
-        "hotel_name": "Courtyard by Marriott New York Manhattan/Chelsea",
-        "location": "Chelsea, New York",
-        "type": "Hotels"
       }
-    ],
-    "55890": [
+    ]
+  },
+  "55890": {
+    "Manhattan, New York": [
       {
         "dest_id": "55890",
         "value": "New York Hilton Midtown, New York, New York, United States",
@@ -309,7 +332,9 @@
         "hotel_name": "New York Marriott Downtown",
         "location": "Manhattan, New York",
         "type": "Hotels"
-      },
+      }
+    ],
+    "Midtown East, New York": [
       {
         "dest_id": "55890",
         "value": "New York Hilton Midtown, New York, New York, United States",
@@ -318,7 +343,9 @@
         "hotel_name": "EVEN Hotel New York - Midtown East, an IHG Hotel",
         "location": "Midtown East, New York",
         "type": "Hotels"
-      },
+      }
+    ],
+    "Tribeca, New York": [
       {
         "dest_id": "55890",
         "value": "New York Hilton Midtown, New York, New York, United States",
@@ -328,17 +355,21 @@
         "location": "Tribeca, New York",
         "type": "Hotels"
       }
-    ],
-    "973": [
+    ]
+  },
+  "973": {
+    "East Harlem, New York": [
       {
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
         "dest_type": "district",
-        "hotel_id": "13002981",
-        "hotel_name": "Parkside Living City style",
-        "location": "Upper West Side, New York",
+        "hotel_id": "12162715",
+        "hotel_name": "New York Suite Upper East Side - Manhattan",
+        "location": "East Harlem, New York",
         "type": "Apartments"
-      },
+      }
+    ],
+    "East Rutherford": [
       {
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
@@ -347,34 +378,9 @@
         "hotel_name": "Fairfield Inn by Marriott East Rutherford Meadowlands",
         "location": "East Rutherford",
         "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
-        "hotel_id": "76896",
-        "hotel_name": "The Pierre, A Taj Hotel, New York",
-        "location": "Upper East Side, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
-        "hotel_id": "267962",
-        "hotel_name": "The Mark New York",
-        "location": "Upper East Side, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
-        "hotel_id": "3540764",
-        "hotel_name": "Cambria Hotel West Orange",
-        "location": "West Orange",
-        "type": "Hotels"
-      },
+      }
+    ],
+    "Manhattan, New York": [
       {
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
@@ -424,36 +430,9 @@
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
         "dest_type": "district",
-        "hotel_id": "9471585",
-        "hotel_name": "KAMA CENTRAL PARK",
-        "location": "Upper West Side, New York",
-        "type": "Hostels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
-        "hotel_id": "270490",
-        "hotel_name": "The St. Regis New York",
-        "location": "Midtown East, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
         "hotel_id": "55861",
         "hotel_name": "Shoreham Hotel",
         "location": "Manhattan, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
-        "hotel_id": "57397",
-        "hotel_name": "The Empire Hotel New York",
-        "location": "Upper West Side, New York",
         "type": "Hotels"
       },
       {
@@ -469,15 +448,6 @@
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
         "dest_type": "district",
-        "hotel_id": "13074797",
-        "hotel_name": "Columbus New York",
-        "location": "Upper West Side, New York",
-        "type": "Apartments"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
         "hotel_id": "25435",
         "hotel_name": "The Ritz-Carlton New York, Central Park",
         "location": "Manhattan, New York",
@@ -487,9 +457,105 @@
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
         "dest_type": "district",
-        "hotel_id": "12162715",
-        "hotel_name": "New York Suite Upper East Side - Manhattan",
-        "location": "East Harlem, New York",
+        "hotel_id": "59182",
+        "hotel_name": "JW Marriott Essex House New York",
+        "location": "Manhattan, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "58958",
+        "hotel_name": "The Plaza",
+        "location": "Manhattan, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Midtown East, New York": [
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "270490",
+        "hotel_name": "The St. Regis New York",
+        "location": "Midtown East, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "5635615",
+        "hotel_name": "5th & 55th Residence Club",
+        "location": "Midtown East, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Upper East Side, New York": [
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "76896",
+        "hotel_name": "The Pierre, A Taj Hotel, New York",
+        "location": "Upper East Side, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "267962",
+        "hotel_name": "The Mark New York",
+        "location": "Upper East Side, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "24900",
+        "hotel_name": "Loews Regency New York Hotel",
+        "location": "Upper East Side, New York",
+        "type": "Hotels"
+      }
+    ],
+    "Upper West Side, New York": [
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "13002981",
+        "hotel_name": "Parkside Living City style",
+        "location": "Upper West Side, New York",
+        "type": "Apartments"
+      },
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "9471585",
+        "hotel_name": "KAMA CENTRAL PARK",
+        "location": "Upper West Side, New York",
+        "type": "Hostels"
+      },
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "57397",
+        "hotel_name": "The Empire Hotel New York",
+        "location": "Upper West Side, New York",
+        "type": "Hotels"
+      },
+      {
+        "dest_id": "973",
+        "value": "New York Central Park, New York, New York, United States",
+        "dest_type": "district",
+        "hotel_id": "13074797",
+        "hotel_name": "Columbus New York",
+        "location": "Upper West Side, New York",
         "type": "Apartments"
       },
       {
@@ -505,46 +571,22 @@
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
         "dest_type": "district",
-        "hotel_id": "59182",
-        "hotel_name": "JW Marriott Essex House New York",
-        "location": "Manhattan, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
-        "hotel_id": "5635615",
-        "hotel_name": "5th & 55th Residence Club",
-        "location": "Midtown East, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
-        "hotel_id": "58958",
-        "hotel_name": "The Plaza",
-        "location": "Manhattan, New York",
-        "type": "Hotels"
-      },
-      {
-        "dest_id": "973",
-        "value": "New York Central Park, New York, New York, United States",
-        "dest_type": "district",
         "hotel_id": "291324",
         "hotel_name": "Trump International New York",
         "location": "Upper West Side, New York",
         "type": "Hotels"
-      },
+      }
+    ],
+    "West Orange": [
       {
         "dest_id": "973",
         "value": "New York Central Park, New York, New York, United States",
         "dest_type": "district",
-        "hotel_id": "24900",
-        "hotel_name": "Loews Regency New York Hotel",
-        "location": "Upper East Side, New York",
+        "hotel_id": "3540764",
+        "hotel_name": "Cambria Hotel West Orange",
+        "location": "West Orange",
         "type": "Hotels"
       }
     ]
   }
+}
