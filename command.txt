@@ -1,4 +1,0 @@
-http://localhost:8080/destination-property-details?dest_id=20088325
-http://localhost:8080/v1/property/details
-http://localhost:8080/v1/property/list
-http://localhost:8080/hotel-details?hotel_id=7577618
