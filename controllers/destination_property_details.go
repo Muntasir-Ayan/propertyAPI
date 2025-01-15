@@ -3,11 +3,11 @@ package controllers
 
 import (
     "propertyAPI/destination_service"
-    "github.com/beego/beego/v2/server/web"
+    beego "github.com/beego/beego/v2/server/web"
 )
 
 type DestinationPropertyDetailsController struct {
-    web.Controller
+    beego.Controller
 }
 
 func (c *DestinationPropertyDetailsController) Get() {

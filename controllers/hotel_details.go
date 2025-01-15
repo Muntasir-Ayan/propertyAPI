@@ -3,11 +3,11 @@ package controllers
 
 import (
     "propertyAPI/hotel_service"
-    "github.com/beego/beego/v2/server/web"
+    beego "github.com/beego/beego/v2/server/web"
 )
 
 type HotelDetailsController struct {
-    web.Controller
+    beego.Controller
 }
 
 func (c *HotelDetailsController) Get() {
