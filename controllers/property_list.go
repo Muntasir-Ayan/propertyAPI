@@ -1,7 +1,7 @@
 package controllers
 
 import (
-    "propertyAPI/service"
+    "propertyAPI/list_service"
 
     beego "github.com/beego/beego/v2/server/web"
 )
@@ -11,7 +11,7 @@ type PropertyListController struct {
 }
 
 func (c *PropertyListController) Get() {
-    propertiesMap, err := service.GetPropertyList()
+    propertiesMap, err := list_service.GetPropertyList()
     if err != nil {
         c.Data["json"] = map[string]interface{}{
             "error": err.Error(),

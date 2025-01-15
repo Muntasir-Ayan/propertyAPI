@@ -1,4 +1,4 @@
-package service
+package list_service
 
 import (
     "log"
@@ -15,7 +15,7 @@ func GetPropertyList() (map[string]map[string]map[string][]models.PropertyList, 
         h.review_count, h.price, pd.description, pd.image_url, pd.amenities
         FROM locations l
         JOIN associate_hotel h ON l.dest_id = h.dest_id
-        JOIN property_detail pd ON h.hotel_id = pd.hotel_id
+        JOIN property_detail pd ON h.hotel_PropertyDetailid = pd.hotel_id
     `
 
     rows, err := helpers.DB.Query(query)

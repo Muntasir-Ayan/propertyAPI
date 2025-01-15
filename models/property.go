@@ -1,3 +1,5 @@
+//models/property.go
+
 package models
 
 // type PropertyList struct {
