@@ -21,7 +21,7 @@ The Property API allows you to manage property listings, including details such 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- https://github.com/Muntasir-Ayan/hotel-renta **This project should be in running**
+- https://github.com/Muntasir-Ayan/hotel-rental **This project should be in running**
 - Docker and Docker Compose installed on your machine
 - Go programming language installed (if you plan to run the application without Docker)
 - PostgreSQL database
